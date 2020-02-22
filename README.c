@@ -1,22 +1,2 @@
 # numberTOname
 In this program you need to type anscii value to get your name.
-#include<stdio.h>
-#include<stdlib.h>
-
-int main(void)
-{
-int r,o,h,a,n;
-printf("Enter ASCII value for r ");
-scanf("%d",&r);
-printf("Enter ASCII value for o ");
-scanf("%d",&o);
-printf("Enter ASCII value for h ");
-scanf("%d",&h);
-printf("Enter ASCII value for a ");
-scanf("%d",&a);
-printf("Enter ASCII value for n ");
-scanf("%d",&n);
-
-printf("The character is %c%c%c%c%c",r,o,h,a,n);
-return 0;
-}
