@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+  int i,num,large,n[50];
+  printf("How many numbers you want to enter:");
+  scanf("%d",&num);
+  large=0;
+  for(i=0;i<num;i++)
+  {
+      scanf("%d",&n[i]);
+      if (n[i]>large)
+      {
+          large=n[i];
+      }
+  }
+  printf("largest num is %d",large);
+}
