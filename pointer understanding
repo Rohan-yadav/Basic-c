@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main()
+{
+   double dnum;
+   dnum=78.9054;
+   int num;
+   num=20;
+   char ch[]="R";
+   double *dnump;
+   int *nump;
+   char *chrp;
+   dnump = &dnum;
+   nump = &num;
+   chrp = &ch;
+   printf("Address of char ch is %p\n",&ch);
+   printf("Address of int num is %p\n",&num);
+   printf("Address of double dnum is %p\n",&dnum);
+   printf("Address of char* ch is %p\n",chrp);
+   printf("Address of int* nump is %p\n",nump);
+   printf("Address of double* dnump is %p\n\n",dnump);
+   
+   printf("Value of char ch is %c\n",ch[0]);
+   printf("Value of int num is %d\n",num);
+   printf("Value of double dnum is %lf \n",dnum);
+   printf("Value of char* chrp is %c\n",*chrp);
+   printf("Value of int* nump is %d\n",*nump);
+   printf("Value of double* dnump is %lf\n\n",*dnump);
+   
+   Output:
+   Address of char ch is 0x7fff204ca95a
+Address of int num is 0x7fff204ca95c
+Address of double dnum is 0x7fff204ca960
+Address of char* ch is 0x7fff204ca95a
+Address of int* nump is 0x7fff204ca95c
+Address of double* dnump is 0x7fff204ca960
+
+Value of char ch is R
+Value of int num is 20
+Value of double dnum is 78.905400 
+Value of char* chrp is R
+Value of int* nump is 20
+Value of double* dnump is 78.905400
+
+      
+   printf("The size of char is %lu bytes\n ",sizeof(ch));
+   printf("The size of int is %lu bytes\n ",sizeof(num));
+   printf("The size of double is %lu bytes\n ",sizeof(dnum));
+   printf("The size of char* is %lu bytes\n ",sizeof(*chrp));
+   printf("The size of int* is %lu bytes\n ",sizeof(*nump));
+   printf("The size of double* is %lu bytes\n ",sizeof(*dnump));
+   
+   
+    return 0;
+}
