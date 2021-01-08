@@ -15,8 +15,8 @@ int main()
          struct Emp e1;
 
         printf("size of employee id: %d\n",sizeof(e1.Emp_id));
-        printf("size of employee name: %d\n",sizeof(e1.E_name));
-        printf("size of slary: %d\n",sizeof(e1.salary));
+        printf("size of employee name: %s\n",sizeof(e1.E_name));
+        printf("size of slary: %f\n",sizeof(e1.salary));
         printf("size of employee structure: %d\n",sizeof(e1));     //passing structure variable to size of function
 
         return 0;
